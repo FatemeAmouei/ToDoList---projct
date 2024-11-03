@@ -1,16 +1,9 @@
 import React, { useState } from "react";
-import { Todo } from "./Todos.type";
+import { TodoItemProps } from "./Todos.type";
 import "../styles.css";
 import Swal from "sweetalert2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faEdit, faCheck } from "@fortawesome/free-solid-svg-icons";
-
-interface TodoItemProps {
-  todo: Todo;
-  onDelete: (id: number) => void;
-  onToggleComplete: (id: number) => void;
-  onEdit: (id: number, newText: string) => void;
-}
 
 const TodoItem: React.FC<TodoItemProps> = ({
   todo,

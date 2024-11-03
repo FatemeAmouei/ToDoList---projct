@@ -13,8 +13,8 @@ const Login = ({
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    const validUsername = "1";
-    const validPassword = "1";
+    const validUsername = "1234";
+    const validPassword = "1234";
     const token = "yourGeneratedToken";
     const expiry = Date.now() + 3600 * 1000;
 

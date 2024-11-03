@@ -1,19 +1,9 @@
 import React, { useState } from "react";
 import { Container, Box, TextField, Button, Typography } from "@mui/material";
 import TodoItem from "./Todoitem";
-import { Todo } from "./Todos.type";
+import { TodosWrapperProps } from "./Todos.type";
 import { todoWrapper, newtodowrapper } from "../styles";
 import "../styles.css";
-
-interface TodosWrapperProps {
-  todos: Todo[];
-  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
-  addTodo: (text: string) => void;
-  updateTodo: (id: number, newText: string) => void;
-  deleteTodo: (id: number) => void;
-  toggleComplete: (id: number) => void;
-  onLogout: () => void;
-}
 
 const TodosWrapper: React.FC<TodosWrapperProps> = ({
   todos,
