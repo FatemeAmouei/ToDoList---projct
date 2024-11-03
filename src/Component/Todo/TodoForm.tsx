@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 type TodoFormProps = {
-  addTodo: (text: string) => void; // تغییر نوع تابع به void
+  addTodo: (text: string) => void;
 };
 
 function TodoForm({ addTodo }: TodoFormProps) {
